@@ -8,11 +8,11 @@ const connection = require('./configuration/configurationDB');
 const userRoutes = require("./modules/users/routes/user.routes");
 const productsRoutes = require("./modules/product/routes/products.routes");
 
-router.get("/" ,(req , res)=>{
-    res.json({
-        hello:'hiii'
-    });
-});
+// router.get("/", (req, res) => {
+//     res.json({
+//       hello: "hi!"
+//     });
+//   });
 
 app.use(express.json());
 app.use(userRoutes);
