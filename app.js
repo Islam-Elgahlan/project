@@ -3,7 +3,7 @@ const serverless = require('serverless-http');
 const app = express()
 const router = express.Router();
 require('dotenv').config()
-const port = process.env.Port
+var port = process.env.Port
 const connection = require('./configuration/configurationDB');
 const userRoutes = require("./modules/users/routes/user.routes");
 const productsRoutes = require("./modules/product/routes/products.routes");
